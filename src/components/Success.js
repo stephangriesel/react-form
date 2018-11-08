@@ -5,7 +5,6 @@ import AppBar from "material-ui/AppBar";
 export class Success extends Component {
   continue = e => {
     e.preventDefault();
-    // SEND DATA TO BACKEND 
     this.props.nextStep();
   };
   back = e => {
@@ -13,7 +12,6 @@ export class Success extends Component {
     this.props.prevStep();
   };
   render() {
-    const { values: { firstName, lastName, email, occupation , city, bio } } = this.props;
     return (
       <MuiThemeProvider>
         <React.Fragment>
